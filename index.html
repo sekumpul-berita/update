@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUTFI's Portfolio - DJ EDM & BREAKBEAT</title>
+    
+    <!-- Author Meta Tags -->
+    <meta name="author" content="LUTFI">
+    <meta name="description" content="Portfolio LUTFI - BREAKBEAT yang berpetualang di dunia nyata dan virtual.">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="LUTFI's Portfolio">
+    <meta property="og:description" content="Portfolio LUTFI - BREAKBEAT yang berpetualang di dunia nyata dan virtual.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://github.com/radar-puncak/berita/">
+    <meta property="og:image" content="https://imagizer.imageshack.com/img922/3891/71tVoI.png">
+    <meta property="profile:first_name" content="LUTFI">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LUTFI's Portfolio">
+    <meta name="twitter:description" content="Portfolio LUTFI - BREAKBEAT yang berpetualang di dunia nyata dan virtual.">
+    <meta name="twitter:image" content="https://imagizer.imageshack.com/img922/3891/71tVoI.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://github.com/radar-puncak/berita/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ff80ab">
+    
+    <!-- Author Link -->
+    <link rel="author" href="https://github.com/radar-puncak/berita/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "LUTFI",
+        "jobTitle": "BREAKBEAT",
+        "description": "BREAKBEAT yang berpetualang di dunia nyata dan virtual.",
+        "image": "https://imagizer.imageshack.com/img922/3891/71tVoI.png",
+        "url": "https://github.com/radar-puncak/berita/",
+        "email": "ayana@usd.ac.id",
+        "sameAs": [
+            "https://github.com/Sw4CyEx/"
+        ],
+        "knowsAbout": [
+            "DJ",
+            "EDM MUSIC",
+            "BREAKBEAT"
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "BREAKBEAT"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --primary: #080a04;
+            --primary-light: #16010d;
+            --primary-dark: #0f0408;
+            --secondary: #0e0206;
+            --accent: #110207;
+            --text: #4a4a4a;
+            --background: #011311;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            background-image: url('images/kawaii-bg.png');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .profile-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(255, 128, 171, 0.3);
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: var(--primary-light);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        .profile-card::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            width: 150px;
+            height: 150px;
+            background-color: var(--secondary);
+            border-radius: 50%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--primary);
+            margin: 0 auto 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(255, 128, 171, 0.5);
+        }
+        
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        h1 {
+            color: var(--primary-dark);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(255, 128, 171, 0.3);
+        }
+        
+        .job-title {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        
+        .bio {
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+        
+        .skill-badge {
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 5px;
+            font-weight: 500;
+            box-shadow: 0 3px 6px rgba(255, 128, 171, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .skill-badge:hover {
+            transform: translateY(-3px);
+        }
+        
+        .links-section {
+            margin-top: 40px;
+        }
+        
+        .link-btn {
+            display: block;
+            background-color: white;
+            color: var(--primary-dark);
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 15px 0;
+            border-radius: 15px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-light);
+            box-shadow: 0 5px 15px rgba(255, 128, 171, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-btn:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255, 128, 171, 0.4);
+        }
+        
+        .link-btn::before {
+            content: "♡";
+            position: absolute;
+            left: 20px;
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
+        .link-btn:hover::before {
+            opacity: 1;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--primary-dark);
+            font-size: 0.9rem;
+        }
+        
+        .decoration {
+            position: absolute;
+            z-index: -1;
+            opacity: 0.6;
+        }
+        
+        .star1 {
+            top: 10%;
+            left: 10%;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .star2 {
+            top: 20%;
+            right: 15%;
+            animation: float 8s ease-in-out infinite;
+        }
+        
+        .heart1 {
+            bottom: 15%;
+            left: 5%;
+            animation: float 7s ease-in-out infinite;
+        }
+        
+        .heart2 {
+            bottom: 30%;
+            right: 10%;
+            animation: float 9s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .profile-card {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <article class="profile-card" itemscope itemtype="https://schema.org/Person">
+            <div class="profile-img">
+                <img src="https://imagizer.imageshack.com/img922/3891/71tVoI.png?height=300&width=300" alt="LUTFI Profile" itemprop="image">
+            </div>
+            
+            <h1 itemprop="name">LUTFI</h1>
+            <div class="job-title" itemprop="jobTitle">✧ BREAKBEAT ✧</div>
+            
+            <div class="bio">
+                <p itemprop="description">Halo! Aku LUTFI, seorang DJ yang berpetualang di dunia malam. Aku juga seorang Selebgram</p>
+            </div>
+            
+            <div class="skills">
+                <div class="skill-badge">✦ MUSIC ✦</div>
+                <div class="skill-badge">✦ BREAKBEAT ✦</div>
+                <div class="skill-badge">✦ DJ ✦</div>
+            </div>
+            
+            <div class="links-section">
+                <a href="https://github.com/Sw4CyEx/" class="link-btn" itemprop="sameAs">Github</a>
+                <a href="#LUTFI" class="link-btn">Discord</a>
+                <a href="#LUTFI" class="link-btn">YouTube</a>
+                <a href="#LUTFI" class="link-btn">EDM MUSIC</a>
+                <a href="mailto:ayana@usd.ac.id" class="link-btn" itemprop="email">Contact Me</a>
+            </div>
+        </article>
+        
+        <footer class="footer">
+            <p>✧ Made with love by <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">LUTFI</span></span> ✧</p>
+        </footer>
+    </div>
+    
+    <img src="https://imagizer.imageshack.com/img922/3891/71tVoI.png?height=50&width=50" alt="" class="decoration star1">
+    <img src="https://imagizer.imageshack.com/img922/3891/71tVoI.png?height=40&width=40" alt="" class="decoration star2">
+    <img src="https://imagizer.imageshack.com/img922/3891/71tVoI.png?height=60&width=60" alt="" class="decoration heart1">
+    <img src="https://imagizer.imageshack.com/img922/3891/71tVoI.png?height=50&width=50" alt="" class="decoration heart2">
+    
+</body>
+</html>
